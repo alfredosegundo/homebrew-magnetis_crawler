@@ -2,21 +2,21 @@
 class MagnetisCrawler < Formula
   desc "Crawler of the json api of magnetis.com.br website"
   homepage ""
-  version "1.0.6"
+  version "1.0.7"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/alfredosegundo/magnetis-crawler/releases/download/v1.0.6/magnetis-crawler_1.0.6_Darwin_x86_64.tar.gz"
-    sha256 "b07c6af6d9ea20deb9016b997b6803451d4ee68d699c30f69969f83cc5ed58bc"
+    url "https://github.com/alfredosegundo/magnetis-crawler/releases/download/1.0.7/magnetis-crawler_1.0.7_Darwin_x86_64.tar.gz"
+    sha256 "6f5005e6dfcc1a17d31a6df2ec6ffa8fa76f6ecbc84adb2cd3affce7a744a155"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/alfredosegundo/magnetis-crawler/releases/download/v1.0.6/magnetis-crawler_1.0.6_Linux_x86_64.tar.gz"
-      sha256 "28cb297c5e4ab58662b1d05a99bfecac49bc07c1511ad691f24091fe7cfe6d14"
+      url "https://github.com/alfredosegundo/magnetis-crawler/releases/download/1.0.7/magnetis-crawler_1.0.7_Linux_x86_64.tar.gz"
+      sha256 "642980f09b45496e854f8b4ebb927eefbd4bd343608c1830a7a80bff4cbf83c8"
     end
   end
 
   def install
-    bin.install "program"
+    bin.install "magnetis-crawler"
   end
 
   test do
